@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JAVA" />
         <module name="dog-and-owner" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dog-and-owner" target="17" />
+      <module name="JAVA" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JAVA" options="-parameters" />
       <module name="dog-and-owner" options="-parameters" />
     </option>
   </component>
